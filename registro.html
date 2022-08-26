@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/Gorro_cocinero.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1>Qué puedo comer hoy...</h1>
+        <h4>Recetas fáciles</h4> 
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre el cocinero</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="sucursal.html">Lugares Recomendados</a></li>
+        </nav>
+        
+    </header>
+    <section>
+        <audio src="mp3/musica-para-cocinar.mp3"controls autoplay></audio>
+    </section>
+    <aside>
+        <ul>
+            <a href="pastas.html">Pastas</a>
+            <a href="carnes.html">Carnes</a>
+            <a href="pescado.html">Pescado</a>
+        </ul>
+    </aside>
+    <section>
+        <h1>Formulario de suscripción</h1>
+        <form action="show_data.html" method="post" target="_blank">
+            <fieldset>
+                <legend class="personales">Datos personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" maxlength="30">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" maxlength="30">
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" maxlength="30">
+                <label for="fecha">F. de Nac.</label>
+                <input type="date" name="fecha" id="fecha">
+                <p>Género</p>
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="genero" id="hombre" value="Hombre">
+                <label for="mujer">Mujer</label>
+                <input type="radio" name="genero" id="mujer" value="Mujer">
+                <label for="otro">Otro</label>
+                <input type="radio" name="genero" id="otro" value="Otro">
+                <label for="nsnc">Prefiero no contestar</label>
+                <input type="radio" name="genero" id="nsnc" value="nsnc" checked>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label for="cel">Celular</label>
+                <input type="number" name="cel" id="cel">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias</legend>
+                <p>¿Cuáles recetas le gustaría ver más a menudo?</p>
+                <label><input type="checkbox" name="receta" id="receta" value="carnes_blancas">Carnes Blancas</label>
+                <label><input type="checkbox" name="receta" id="receta" value="carnes_rojas">Carnes Rojas</label>
+                <label><input type="checkbox" name="receta" id="receta" value="pesado">Pescado</label>
+                <label><input type="checkbox" name="receta" id="receta" value="vegetarianas">Vegetarianas</label>
+                <label><input type="checkbox" name="receta" id="receta" value="pastas">Pastas</label>
+                <label><input type="checkbox" name="receta" id="receta" value="mariscos">Mariscos</label>
+
+                <label for="comentarios"></label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Deje aquí sus comentarios"></textarea>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <i class='bx bxl-linkedin-square' style='color:#05127b'  ></i>
+        <i class='bx bxl-youtube' style='color:#e60808'  ></i>
+        <i class='bx bxl-instagram' style='color:#ec20dc'  ></i>
+        <i class='bx bxl-facebook-square' style='color:#2037ec'  ></i>
+
+        Derechos reservados. 2022
+    </footer>
+</body>
+</html>
